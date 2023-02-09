@@ -1,0 +1,14 @@
+// -----------------------------------------------------------------------------
+// Swiper Js
+// -----------------------------------------------------------------------------
+
+@import "swiper/swiper-bundle.css";
+@import "swiper/swiper.scss";
+
+.swiper-container {
+	&.swiper-controls-hidden {
+		.swiper-button-disabled {
+			opacity: 0 !important;
+		}
+	}
+}

@@ -1,0 +1,103 @@
+//positions
+.sticky-top {
+  position: sticky;
+  top: 0;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+}
+
+.top-most {
+  top: 0;
+}
+
+.bottom-most {
+  bottom: 0;
+}
+
+.left-most {
+  left: 0;
+}
+
+.right-most {
+  right: 0;
+}
+
+.relative-position {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+//overflow
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
+
+//rows and columns
+
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.full-vh {
+  min-height: 100vh;
+}
+
+.full-vw {
+  width: 100vw;
+}
+
+.half-vh {
+  height: 50vh;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.quarter-width {
+  width: 70%;
+}

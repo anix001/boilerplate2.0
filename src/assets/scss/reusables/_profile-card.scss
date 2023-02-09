@@ -1,0 +1,347 @@
+.profile-scroller {
+	width: 100%;
+	padding-top: 30px;
+	min-height: $profile-card-height;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.swiper-container {
+		width: 100%;
+	}
+
+	.scroll-btn {
+		height: 35px;
+		width: 35px;
+		padding: 0;
+		border-width: 0px;
+		border-style: none;
+		border-radius: 50%;
+		background-color: transparent;
+		color: $icon-color;
+	}
+
+	&__controls {
+		display: flex;
+		position: absolute;
+		right: 20px;
+		top: 10px;
+		&__prev {
+			margin-right: 0.25rem;
+		}
+		&__next {
+		}
+	}
+}
+
+.profile-card {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: flex-start;
+	padding: $profile-card-spacing;
+	margin: $profile-card-margin;
+	background-color: $profile-card-bg;
+	min-width: $profile-card-width;
+	max-width: $profile-card-width;
+	height: $profile-card-height;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+	&__options {
+		margin-top: -15px;
+		margin-right: -10px;
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		button {
+			padding: 4px;
+		}
+		svg {
+			font-size: 19px;
+			color: $icon-color;
+			cursor: pointer;
+		}
+	}
+
+	&__body {
+		display: flex;
+		flex: 1;
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		.avatar {
+			width: 80px;
+			height: 80px;
+		}
+
+		.default-avatar {
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		h4 {
+			font-family: $title-font;
+			color: $icon-color;
+			padding: 10px 0px 5px 0px;
+		}
+
+		&__tags {
+			width: 100%;
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+			flex-wrap: wrap;
+			span {
+				font-size: 10px;
+				font-weight: bold;
+				color: $icon-color;
+			}
+			.chip {
+				margin: 3px;
+				padding: 0px;
+				cursor: pointer;
+			}
+		}
+
+		&__appointments {
+			display: flex;
+			width: 55%;
+			align-items: center;
+			justify-content: space-between;
+
+			svg {
+				font-size: 20px;
+			}
+
+			div {
+				display: flex;
+				flex-direction: column;
+				padding: 10px 0px 10px 0px;
+				span {
+					margin-top: -5px;
+					font-size: 13px;
+					opacity: 0.7;
+				}
+			}
+		}
+
+		.status-dot {
+			position: absolute;
+			width: 15px;
+			height: 15px;
+			border-radius: 50%;
+			margin-top: -140px;
+			margin-right: -40px;
+			background-color: $success-color;
+			border-style: solid;
+			border-width: 2px;
+			border-color: white;
+		}
+
+		&__entity-details {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
+			padding-top: 10px;
+
+			span {
+				font-size: 14px;
+				color: $icon-color;
+			}
+		}
+	}
+}
+
+.user-profile-card {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 0px;
+	margin: $profile-card-margin;
+	background-color: $profile-card-bg;
+	min-width: $profile-card-width;
+	max-width: $profile-card-width;
+	height: $user-card-height;
+	border-radius: 10px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+	&__options {
+		position: absolute;
+		display: flex;
+		z-index: 100;
+		flex-direction: column;
+		margin-left: 250px;
+		margin-top: 5px;
+		button {
+			padding: 4px;
+		}
+		svg {
+			font-size: 15px;
+			color: black;
+			cursor: pointer;
+		}
+	}
+
+	&__body {
+		display: flex;
+		flex: 1;
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+
+		&__cover {
+			top: 0px;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			background-color: #F6F6F6;
+			width: 100%;
+			height:80px;
+			overflow: hidden;
+
+			img {
+				height: 500%;
+				margin-top: -100%;
+				opacity: 0.1;
+			}
+
+		}
+
+		.user-card-avatar {
+			// position: absolute;
+			cursor: pointer;
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			margin-top: 30px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: white;
+			// box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+			// box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+
+			.inner-avatar {
+				// background-color:white;
+				width:90%;
+				height:90%;
+				border-radius:50%;
+				// background-color:lightgray;
+			}
+
+			.avatar {
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+			}
+
+			.default-avatar {
+			    // background-color: lightblue;
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+
+
+		}
+
+		h4 {
+			font-family: $title-font;
+			color: $icon-color;
+			padding: 10px 0px 5px 0px;
+		}
+
+		&__tags {
+			width: 100%;
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+			flex-wrap: wrap;
+			span {
+				font-size: 10px;
+				font-weight: bold;
+				color: $icon-color;
+			}
+			.chip {
+				margin: 3px;
+				padding: 0px;
+				cursor: pointer;
+			}
+		}
+
+		&__appointments {
+			display: flex;
+			width: 55%;
+			align-items: center;
+			justify-content: center;
+
+			svg {
+				font-size: 20px;
+				margin-right: 10px;
+				margin-top: 10px;
+			}
+
+			div {
+				border-left-style:solid;
+				border-left-width: 1px;
+				border-left-color: rgba(0,0,0,0.1);
+				display: flex;
+				flex-direction: column;
+				margin-top: 10px;
+				padding: 0px 0px 0px 20px;
+				span {
+					margin-top: -5px;
+					font-size: 13px;
+					opacity: 0.7;
+				}
+			}
+		}
+
+		.status-dot {
+			position: absolute;
+			width: 15px;
+			height: 15px;
+			border-radius: 50%;
+			margin-top: -140px;
+			margin-right: -40px;
+			background-color: $success-color;
+			border-style: solid;
+			border-width: 2px;
+			border-color: white;
+		}
+
+		&__entity-details {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
+			padding-top: 10px;
+
+			span {
+				font-size: 14px;
+				color: $icon-color;
+			}
+		}
+	}
+}
+
+.ap-avatar {
+	min-width: 50px;
+			min-height: 50px;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+}

@@ -1,0 +1,298 @@
+@import "vars";
+@import "grid";
+@import "positioning";
+@import "spacing";
+@import "typography";
+@import "customStyles";
+@import "./reusables/profile-card";
+@import "./reusables/swiper";
+@import "./reusables/patient-card";
+@import "./reusables/buttons";
+@import "./reusables/appointment-card";
+@import "tooltip", "vars", "customStyles", "border", "flex";
+@import "./reusables/upcoming-appointments-card";
+@import "./reusables/inputs";
+@import "./reusables/table";
+@import "./reusables/modals";
+@import "./reusables/infinite-scroll-container";
+@import "./reusables/loaders/lottie";
+@import "./reusables/loaders/load-more";
+@import "./reusables/switch";
+@import "./reusables//payment";
+@import "./reusables/stepper";
+@import "./reusables/workFlow";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: $title-font;
+	//font-weight: 700;
+	scroll-behavior: smooth;
+}
+
+.index-1 {
+	z-index: -5 !important;
+}
+
+.index1 {
+	z-index: 1;
+}
+
+.sticky {
+	top: 0;
+	position: sticky;
+	background-color: white;
+	z-index: 1;
+}
+
+.sticky-abs {
+	position: absolute;
+	opacity: 0.8;
+}
+
+.dynamic-x-padding {
+	padding-left: 16rem;
+	padding-right: 16rem;
+	@media (max-width: 1919px) {
+		padding-left: 5.5rem;
+		padding-right: 5.5rem;
+	}
+	@media (max-width: 767px) {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
+
+.dynamic-y-padding {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	@media (max-width: 1919px) {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	// object-fit: contain;
+}
+
+.img-cover {
+	img {
+		object-fit: cover !important;
+	}
+}
+
+.check {
+	border: 2px solid red;
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+	color: #4e4b66;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+.cursor-none {
+	cursor: none;
+}
+
+//backgrounds
+.bg-primary {
+	background-color: $primary-color;
+}
+
+.bg-profile {
+	background-color: $profile-color;
+}
+
+.bg-accent {
+	background-color: $accent-color;
+}
+
+.bg-secondary {
+	background-color: $secondary-color;
+}
+
+.bg-ternary {
+	background-color: $ternary-color;
+}
+
+.bg-gradient {
+	background: $bg-gradient;
+}
+
+.bg-light {
+	background-color: $light-color;
+}
+
+.bg-success {
+	background-color: $success-color;
+}
+
+.bg-danger {
+	background-color: $danger-color;
+}
+
+.bg-info {
+	background-color: $info-color;
+}
+
+.bg-warning {
+	background-color: $warning-color;
+}
+
+.bg-error {
+	background-color: $danger-color;
+}
+
+.bg-selected {
+	background-color: #def9ff;
+	transition: 1s;
+}
+
+//extra backgrounds
+
+.bg-grey {
+	background-color: #f5f5f5 !important;
+}
+
+.bg-light-primary {
+	background-color: #f3efff;
+}
+
+.bg-light-secondary {
+	background-color: #f1fcff;
+}
+
+.bg-light-error {
+	background-color: #fff3f8;
+}
+
+.bg-light-warning {
+	background-color: #fff9ef;
+}
+
+.bg-red {
+	background-color: red;
+}
+
+//image property
+
+.img-profile-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-profile {
+	vertical-align: middle;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+.img-profile-mini {
+	vertical-align: middle;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.mini-tags {
+	background-color: aliceblue;
+	border-radius: 20%;
+}
+
+.rectangle-full {
+	width: 100%;
+	height: 170px;
+	border-radius: 10px;
+	border-color: rgb(124, 150, 150);
+	border-style: dotted;
+}
+
+//shadow property
+.shadow-light {
+	box-shadow: 0px 8px 16px $shadow-color;
+}
+
+//separators
+
+.separators {
+	height: 50px;
+	border-bottom: 1px solid $pale-color;
+}
+
+@media screen and (max-width: 1200px) {
+	.lt-xl {
+		display: none;
+	}
+}
+
+.empty-comp {
+	width: 80%;
+	min-height: 100px;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0.5;
+	svg {
+		border-style: solid;
+		padding: 10px;
+		border-radius: 50%;
+		border-width: 1px;
+		font-size: 20px;
+		width: 50px;
+		height: 50px;
+		opacity: 0.4;
+	}
+	span {
+		color: $ternary-color;
+	}
+}
+
+.empty-card-comp {
+	width: 100%;
+	min-height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0.5;
+	svg {
+		border-style: solid;
+		padding: 10px;
+		border-radius: 50%;
+		border-width: 1px;
+		font-size: 20px;
+		width: 50px;
+		height: 50px;
+		opacity: 0.4;
+	}
+	span {
+		font-size: 15px;
+		padding-top: 10px;
+		color: $ternary-color;
+	}
+}
+
+.css-wjsjww-MuiChip-label {
+	font-size: 10px;
+}
+
+.MuiPaper-root {
+	min-width: 40%;
+}

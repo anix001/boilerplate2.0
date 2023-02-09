@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@200;400&family=Poppins&display=swap");
+
+//colors
+$primary-color: #42b3e5;
+$secondary-color: #0384ce;
+$ternary-color: #4e4b66;
+$accent-color: #454557;
+$dark-primary: #0384ce;
+$grey-color: #a0a3bd;
+$light-color: #6093e4;
+// $bg-gradient: linear-gradient(105.48deg, #4caf50 0%, #8bc34a 51.72%, #3949ab 101.33%);
+$bg-gradient: #f6841f;
+$success-color: #4caf50;
+$danger-color: #d32f2f;
+$info-color: #2196f3;
+$warning-color: #ff9800;
+$profile-color: #fcfcfc;
+$profile-color: #fcfcfc;
+$white-color: #fcfcfc;
+$pale-color : #efecfa;
+$shadow-color: rgba(17, 17, 17, 0.06);
+
+$text-color: #2e2e2e;
+//font-sizes
+$title-size: 2.4rem;
+$accent-size: 1.6rem;
+$body-size: 0.9rem;
+
+//font-family
+$title-font: "Poppins";
+$accent-font: "Poppins";
+
+//sizes
+$xs: 4px;
+$sm: 8px;
+$md: 16px;
+$lg: 24px;
+$xl: 32px;
+$xxl: 150px;
+
+//layouting
+$wrapper-val: 7.5vw;
+
+// spacings
+$profile-card-spacing: 25px;
+$profile-card-margin: 15px;
+$profile-card-width: 285px;
+$profile-card-height: 300px;
+$user-card-height: 320px !important;
+$profile-card-bg: #ffffff;
+$icon-color: $ternary-color;

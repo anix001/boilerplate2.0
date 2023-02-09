@@ -1,0 +1,192 @@
+@import "vars";
+
+//headings
+
+.text-h1 {
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: 6rem;
+  letter-spacing: -0.01562em;
+}
+
+.text-h2 {
+  font-size: 3.75rem;
+  font-weight: 300;
+  line-height: 3.75rem;
+  letter-spacing: -0.00833em;
+}
+
+.text-h3 {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 3.125rem;
+  letter-spacing: normal;
+}
+
+.text-h4 {
+  font-size: 2.125rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  letter-spacing: 0.00735em;
+}
+
+.text-h5 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: normal;
+}
+
+.text-h6 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem;
+  letter-spacing: 0.0125em;
+}
+
+.text-h7 {
+  font-size: clamp(0.4rem, 0.9rem, 1rem);
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.0125em;
+}
+
+.text-subtitle1 {
+  font-size: clamp(0.7rem, 1rem, 1.2rem);
+  font-weight: 600;
+  line-height: 1.75rem;
+  letter-spacing: 0.00937em;
+}
+
+.text-subtitle2 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.375rem;
+  letter-spacing: 0.00714em;
+}
+
+
+//font weights
+
+.text-weight-thin {
+  font-weight: 100;
+}
+
+.text-weight-light {
+  font-weight: 300;
+}
+
+.text-weight-bold {
+  font-weight: 700;
+}
+
+.text-weight-bolder {
+  font-weight: 900;
+}
+
+//css helpers
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+
+//text-helpers
+.text-primary {
+  color: $primary-color;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+.text-ternary {
+  color: $ternary-color;
+}
+
+.text-light {
+  color: $light-color;
+}
+
+.text-success {
+  color: $success-color;
+}
+
+.text-danger {
+  color: $danger-color;
+}
+
+.text-info {
+  color: $info-color;
+}
+
+.text-warning {
+  color: $warning-color;
+}
+
+.text-extra-white{
+  color: #6E7191;
+}
+.text-grey{
+  color : $grey-color
+}
+
+
+
+//extra texts
+.text-red {
+  color: red;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-color-light {
+  color : grey;
+}
+
+.pointer {
+  cursor: pointer;
+}
+

@@ -1,0 +1,122 @@
+.receptionist-doctor-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 1rem;;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding-top: 15px;
+	min-height: 80vh;
+
+	.grid-boxx {
+		>.user-profile-card {
+			min-width:95% !important;
+			max-width: 95% !important;
+			height: 300px;
+
+			>.user-profile-card__body{
+				>.user-card-avatar {
+					margin-top: -55px !important;
+					z-index: 10;
+				}
+			>.user-profile-card__body__cover {
+				display: none;
+			}}
+
+			>.user-profile-card__options {
+				position: relative;
+				width: 100%;
+				height: 90px;
+				margin-left: 0px;
+				margin-top:0px;
+				border-radius: 10px;
+				background-position: cover;
+				background-size: 100%;
+				background:url('../../images/card-back.png');
+				align-items: flex-end;
+				justify-content: center;
+				padding-right: 15px;
+				z-index: 1;
+			}
+		}
+	}
+
+	> .profile-card {
+		margin: 10px 5px;
+		background-color: #fcfcfc;
+		
+		svg {
+			color: $text-color;
+			opacity: 0.8;
+		}
+		b {
+			font-size: 15px;
+			color: $text-color;
+			opacity: 0.8;
+		}
+	}
+}
+.receptionist-doctor-container .user-profile-card  .user-profile-card__body  .user-card-avatar {
+	margin-top: -55px !important;
+    z-index: 10;
+}
+
+.receptionist-patient-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 1rem;;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding-top: 15px;
+	min-height: 80vh;
+
+	.grid-boxx {
+		>.user-profile-card {
+			min-width:95% !important;
+			max-width: 95% !important;
+			height: 300px;
+			margin:5px 0px;
+
+			>.user-profile-card__body{
+				>.user-card-avatar {
+					margin-top: -55px !important;
+					z-index: 10;
+				}
+			>.user-profile-card__body__cover {
+				display: none;
+			}}
+
+			>.user-profile-card__options {
+				position: relative;
+				width: 100%;
+				height: 90px;
+				margin-left: 0px;
+				margin-top:0px;
+				border-radius: 10px;
+				background-position: cover;
+				background-size: 100%;
+				background:url('../../images/card-back.png');
+				align-items: flex-end;
+				justify-content: center;
+				padding-right: 15px;
+				z-index: 1;
+			}
+		}
+	}
+
+	> .profile-card {
+		margin: 10px 5px;
+		background-color: #fcfcfc;
+		
+		svg {
+			color: $text-color;
+			opacity: 0.8;
+		}
+		b {
+			font-size: 15px;
+			color: $text-color;
+			opacity: 0.8;
+		}
+	}
+}

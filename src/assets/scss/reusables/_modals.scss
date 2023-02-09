@@ -1,0 +1,241 @@
+.patient-modal {
+	padding: 40px;
+	.patient-close {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		svg {
+			font-size: 20px !important;
+			color: $text-color;
+		}
+	}
+
+	&__items {
+		display: flex;
+		flex-direction: column;
+		padding: 15px 0px;
+
+		&__actions {
+			width: 100%;
+			display: flex;
+			align-items: flex-end;
+			justify-content: flex-end;
+			button {
+				margin: 5px;
+			}
+		}
+
+		&__item {
+			cursor: pointer;
+			display: flex;
+			width: 100%;
+			flex-direction: row;
+			color: rgba(0, 0, 0, 0.7);
+			justify-content: flex-start;
+			align-items: center;
+			padding: 18px 0px;
+
+			h4 {
+				padding: 0px 15px;
+				font-weight: 400px;
+				color: rgba(0, 0, 0, 0.7);
+			}
+
+			.problem {
+				padding-left: 20px;
+				opacity: 0.8;
+				font-size: 13px;
+			}
+
+			.patient-meet-link {
+				padding-left: 20px;
+				display: flex;
+				align-items: center;
+				button {
+					font-weight: 500;
+					border-width: 1px;
+				}
+				span {
+					margin-left: 15px;
+					opacity: 0.5;
+					font-style: italic;
+				}
+			}
+
+			.time {
+				color: #00ba88;
+			}
+
+			.doctor {
+				padding-left: 20px;
+			}
+
+			.patient {
+				padding-left: 20px;
+			}
+
+			span {
+				font-size: 13px;
+				padding: 0px;
+			}
+
+			.icon-right {
+				position: absolute;
+				right: 40px;
+			}
+
+			.doctor-icon {
+				width: 30px;
+				height: 30px;
+			}
+			svg {
+				font-size: 30px;
+				color: rgba(0, 0, 0, 0.7);
+			}
+		}
+	}
+}
+
+.filters-modal {
+	padding: 40px;
+	.filters-close {
+		position: absolute;
+		top: 30px;
+		right: 20px;
+		svg {
+			font-size: 20px !important;
+			color: $text-color;
+		}
+	}
+
+	span {
+		padding: 10px 5px;
+	}
+
+	.chip {
+		&:hover {
+			background-color: #42b3e5;
+			color: white;
+		}
+	}
+}
+
+.filters-closee {
+	position: absolute !important;
+	top: 0px;
+	right: 5px !important;
+	svg {
+		font-size: 20px !important;
+		color: $text-color;
+	}
+}
+
+.filters-close-normal {
+	position: absolute !important;
+	top: 10px;
+	right: 10px !important;
+	svg {
+		font-size: 20px !important;
+		color: $text-color;
+	}
+}
+
+.app-modal {
+	padding: 40px;
+	max-height: 90vh;
+	overflow-y: scroll;
+
+	&::-webkit-scrollbar {
+		width: 2px; /* width of the entire scrollbar */
+	}
+
+	&::-webkit-scrollbar-track {
+		background: lightgray; /* color of the tracking area */
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: gray; /* color of the scroll thumb */
+		border-radius: 20px; /* roundness of the scroll thumb */
+		border: 3px solid gray; /* creates padding around scroll thumb */
+	}
+
+	> span {
+		padding: 10px 5px;
+	}
+
+	> .chip {
+		&:hover {
+			background-color: #42b3e5;
+			color: white;
+		}
+	}
+}
+
+.app-modal-header {
+	display: flex;
+	align-items: center;
+
+	&__calender {
+		position: absolute;
+		right: 40px;
+		margin-top: 0px;
+
+		svg {
+			opacity: 1;
+		}
+	}
+
+	svg {
+		color: $text-color;
+		opacity: 0.6;
+	}
+
+	div {
+		display: flex;
+		flex-direction: column;
+		padding-left: 10px;
+
+		h4 {
+			font-family: $title-font;
+			margin: 0px;
+			padding: 0px;
+			font-weight: 400;
+			color: $text-color;
+			opacity: 0.8;
+		}
+
+		span {
+			font-family: $title-font;
+			margin: 0px;
+			padding: 0px;
+			font-size: 13px;
+			color: $text-color;
+			opacity: 0.6;
+		}
+	}
+}
+
+.input-icon {
+	color: #6e7191;
+	margin-top: 27px;
+}
+
+.delete-content {
+	h5 {
+		padding: 10px 0px;
+		opacity: 0.7;
+		font-size: 15px;
+	}
+}
+
+.delete-header {
+}
+
+.delete-action {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	button {
+		margin: 3px;
+	}
+}

@@ -1,0 +1,123 @@
+.btn-primary,
+button.btn-primary {
+	background: $primary-color;
+	color: white;
+	font-size: $md;
+	border: 0px solid $primary-color;
+	opacity: 0.8;
+	border-radius: 3px;
+	padding: 5px 12px;
+	max-height: 35.24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+
+	&:active,
+	&:focus,
+	&:not(:disabled):not(.disabled):active {
+		background-color: $secondary-color;
+		opacity: 0.8;
+		color: white;
+		border: 0px solid $secondary-color;
+		box-shadow: none;
+		opacity: 1;
+	}
+
+	&:hover {
+		background-color: $secondary-color;
+		opacity: 0.8;
+		color: white;
+		border: 0px solid $secondary-color;
+		box-shadow: none;
+		opacity: 1;
+	}
+
+	&.active {
+		background-color: $primary-color;
+		color: white;
+		border: 0px solid $primary-color;
+		box-shadow: none;
+		opacity: 1;
+	}
+}
+
+.btn-primary-outlined,
+button.btn-primary-outlined {
+	background: transparent;
+	color: $primary-color;
+	font-size: $md;
+	border: 1px solid $primary-color;
+	opacity: 0.8;
+	border-radius: 3px;
+	padding: 5px 12px;
+	max-height: 35.24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+
+	&:active,
+	&:focus,
+	&:not(:disabled):not(.disabled):active {
+		background-color: $secondary-color;
+		color: white;
+		border: 1px solid $secondary-color;
+		box-shadow: none;
+		opacity: 1;
+	}
+
+	&:hover {
+		background-color: $primary-color;
+		color: white;
+		border: 1px solid $primary-color;
+	}
+
+	&.active {
+		background-color: $primary-color;
+		color: white;
+		border: 1px solid $primary-color;
+		box-shadow: none;
+		opacity: 1;
+	}
+}
+
+.btn-primary-outlined-sm,
+button.btn-primary-outlined {
+	background: transparent;
+	color: $primary-color;
+	font-size: $md;
+	border: 1px solid $primary-color;
+	opacity: 0.8;
+	border-radius: 3px;
+	padding: 3px 7px;
+	max-height: 35.24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+
+	&:active,
+	&:focus,
+	&:not(:disabled):not(.disabled):active {
+		background-color: $secondary-color;
+		color: white;
+		border: 1px solid $secondary-color;
+		box-shadow: none;
+		opacity: 1;
+	}
+
+	&:hover {
+		background-color: $primary-color;
+		color: white;
+		border: 1px solid $primary-color;
+	}
+
+	&.active {
+		background-color: $primary-color;
+		color: white;
+		border: 1px solid $primary-color;
+		box-shadow: none;
+		opacity: 1;
+	}
+}

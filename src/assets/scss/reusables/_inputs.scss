@@ -1,0 +1,47 @@
+.custom-search-input {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	height: 37px;
+	padding: 0px;
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+	border-radius: 5px;
+	width: 100%;
+	padding-left: 30px;
+
+	svg {
+		color: gray;
+	}
+
+	input {
+		display: flex;
+		flex: 1;
+		border-style: none;
+		background-color: transparent;
+		height: 100%;
+		margin-left: 10px;
+
+		&:focus {
+			border-style: none;
+			outline: none;
+		}
+	}
+}
+
+.custom-select-input {
+	height: 40px;
+	margin: 0px 5px;
+
+	div {
+		border-radius: 0px;
+		border-width: 2px;
+	}
+}
+
+.date-range-picker {
+	display: flex;
+	margin: 0px 5px;
+	label {
+		margin: 0px 10px;
+	}
+}

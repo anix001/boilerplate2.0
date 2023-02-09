@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@200;400&family=Poppins&display=swap");
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 40px;
+  background-color: #6093e4;
+  color: #4e4b66;
+  text-align: center;
+  padding: 2px 0;
+  border-radius: 3px;
+  position: absolute;
+  z-index: 1;
+  font-size: 8px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}/*# sourceMappingURL=tooltip.css.map */

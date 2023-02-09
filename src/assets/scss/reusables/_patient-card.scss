@@ -1,0 +1,62 @@
+.patient-card {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	border-radius: 10px;
+	padding: 5px;
+	flex: 1;
+
+	&__content {
+		display: flex;
+		align-items: flex;
+		justify-content: space-between;
+		flex: 0.8;
+	}
+
+	.default-avatar {
+		width: 60px;
+		height: 60px;
+		border-radius: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: lightgray;
+	}
+
+	.avatar {
+		width: 60px;
+		height: 60px;
+	}
+
+	&__info {
+		display: flex;
+		margin-left: -20px;
+		max-width: 220px;
+		overflow: hidden;
+		flex-direction: column;
+		> span {
+			margin-top: 3px;
+			font-size: 13px;
+			color: $icon-color;
+		}
+		div {
+			margin-top: 3px;
+		}
+	}
+
+	&__action {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+
+		span {
+			margin: 3px 0px;
+			font-size: 13px;
+		}
+	}
+
+	&:hover {
+		background-color: rgba(177, 251, 252, 0.3);
+	}
+}
